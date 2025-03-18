@@ -1,0 +1,52 @@
+
+/* Contact form */
+input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea, .woocommerce .quantity input.qty {
+	background-color: #f9f9f9;
+	border-color: #747a7b;
+	border-width: 1px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	color: #747a7b;
+}
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus, textarea:focus {
+	background-color: #eeeeee !important;
+	border-color: #747a7b !important;
+	color: #747a7b;
+}
+#rev_slider_1_2_wrapper .tp-loader.spinner2 {
+	background-color: #FFFFFF !important;
+}
+.tp-caption.mfnrsdigitallargelight, .mfnrsdigitallargelight {
+	color: #ffffff;
+	font-family:"Gotham Pro",sans-serif;
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 700;
+	background-color: transparent;
+	text-decoration: none;
+	border-width: 0px;
+	border-color: rgb(0,0,0);
+	border-style: none;
+	text-shadow: none;
+	letter-spacing: 6px
+}
+.tp-caption.mfnrsdigitalsmalllight, .mfnrsdigitalsmalllight {
+	color: rgba(255,255,255,.5);
+	font-family:"Gotham Pro",sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+	background-color: transparent;
+	text-decoration: none;
+	border-width: 0px;
+	border-color: rgb(0,0,0);
+	border-style: none;
+	text-shadow: none;
+	letter-spacing: 3px
+}
+.pricing-box {
+	border-width: 1px;
+	border-style: solid;
+	background: #fff;
+}
+
+

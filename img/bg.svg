@@ -1,0 +1,27 @@
+<svg width="1280px" height="800px" viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<g>
+    <linearGradient id="linearGradient_2">
+        <stop offset="0" style="stop-color:#7ac0c1"/>
+        <stop offset="1" style="stop-color:#7ac0c1;stop-opacity:0"/>
+    </linearGradient>
+    <rect fill="url(#linearGradient_2)" x="-100" y="-400" width="800" height="2000" transform="rotate(-100 640 400)"/>
+
+    <linearGradient id="linearGradient_4">
+        <stop offset="0" style="stop-color:#fcffb2"/>
+        <stop offset="1" style="stop-color:#fcffb2;stop-opacity:0"/>
+    </linearGradient>
+    <rect fill="url(#linearGradient_4)" x="-100" y="-400" width="800" height="2000" transform="rotate(110 640 400)"/>
+
+    <linearGradient id="linearGradient_3">
+        <stop offset="0" style="stop-color:#eac9c9"/>
+        <stop offset="1" style="stop-color:#eac9c9;stop-opacity:0"/>
+    </linearGradient>
+    <rect fill="url(#linearGradient_3)" x="-200" y="0" width="800" height="2000" transform="rotate(30 640 400)"/>
+
+    <linearGradient id="linearGradient_1">
+        <stop offset="0" style="stop-color:#b8eaf0"/>
+        <stop offset="1" style="stop-color:#b8eaf0;stop-opacity:0"/>
+    </linearGradient>
+    <rect fill="url(#linearGradient_1)" x="100" y="-400" width="1000" height="2000" transform="rotate(-80 640 400)"/>
+</g>
+</svg>
