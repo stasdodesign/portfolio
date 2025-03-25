@@ -33,25 +33,19 @@
 
 <meta name="title" content="StasDoDesign"></meta>
 <meta name="viewport" content="width=device-width"></meta>
-<title>StasDoDesign</title>
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="profile" href="http://stasdodesign.com">
-<link rel="icon" href="http://stasdodesign.com/DD_logo.jpg" type="image/x-icon" >
+<title>StasDoDesign | Design, Branding & Visual Systems by graphic designer Stanislav Dovidenko</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="canonical" href="http://stasdodesign.com/" >
+<link rel="apple-touch-icon" sizes="180x180" href="stasdodesign.ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="stasdodesign.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="stasdodesign.ico/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="stasdodesign.ico/favicon-16x16.png">
+<link rel="manifest" href="stasdodesign.ico/manifest.json">
+<link rel="mask-icon" href="stasdodesign.ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="stasdodesign.ico/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <!-- FONTS -->
- <link type="text/css" href="//stasdodesign.com/fonts/gotham-pro.css" rel="stylesheet">
 <link rel="stylesheet" href="css/install.css?ver=20100228" type="text/css" >
 </head>
 <center>
@@ -64,7 +58,7 @@
 									<h2 style="color:#fff">Кручу, кручу, педали кручу.</h2>
 									<h3 style="color:#fff">Навстречу радуге — дуге.</h3><br></br><br></br>
 									
-									<a class="btn-pill-black" href="http://<!--#echo var="HTTP_HOST" -->">  Спешу, спешу, спешу налегке</a>
+									<a class="btn-pill-black" href="http://<!--#echo var="HTTP_HOST" -->Спешу, спешу, спешу налегке</a>
 									
                                 </div>
                              </div>
