@@ -11,7 +11,7 @@
 		<meta property="og:url" content="http://stasdodesign.com/" />
 		<meta property="og:site_name" content="Стас Довиденко. Мастер визуализации данных." />
 		<meta property="article:publisher" content="https://www.facebook.com/pages/Stas-Do-Design/379126292227375?ref=hl" />
-		<meta property="og:image" content="http://stasdodesign.com/img/stasdodesign_typography_orange_opt.jpg"></meta>
+		<meta property="og:image" content="/portfolio/img/stasdodesign_typography_orange_opt.jpg" />
 		<meta property="og:image:type" content="image/jpg"></meta>
 <meta name="description" content="Дизайн для печати и сайтов| Логотип | Фирменный стиль | Визуализация данных | Роспись стен в интерьере и на фасадах здании | Суперграфика | Граффити"/>		
 <link rel="canonical" href="http://stasdodesign.com/" />
@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@StasDoDesign"/>
 <meta name="twitter:domain" content="Стас Довиденко. Мастер визуализации данных."/>
 <meta name="twitter:creator" content="@StasDoDesign"/>
-<meta name="twitter:image:src" content="http://stasdodesign.com/img/stasdodesign_typography_orange_opt.jpg"/>
+<meta name="twitter:image:src" content="/portfolio/img/stasdodesign_typography_orange_opt.jpg" />
 <meta name="author" content="StasDoDesign"></meta>
 <meta name="robots" content="all"></meta>
 <meta name="msapplication-TileColor" content="#ffffff"></meta>
