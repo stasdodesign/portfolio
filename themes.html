@@ -28,6 +28,12 @@
       <li><a href="#accordion">Accordion</a></li>
       <li><a href="#modal">Modal</a></li>
       <li><a href="#card">Card</a></li>
+      <li><a href="#tooltip">Tooltip</a></li>
+      <li><a href="#badge">Badge</a></li>
+      <li><a href="#progress">Progress Bar</a></li>
+      <li><a href="#alert">Alert</a></li>
+      <li><a href="#pagination">Pagination</a></li>
+      <li><a href="#tabs">Tabs</a></li>
     </ul>
   </aside>
 
@@ -129,6 +135,70 @@
       </div>
     </section>
 
+    <!-- Tooltip -->
+    <section id="tooltip" class="component-section">
+      <h2>Tooltip</h2>
+      <div class="component-example">
+        <button class="btn-primary" title="This is a tooltip">Hover me for Tooltip</button>
+      </div>
+    </section>
+
+    <!-- Badge -->
+    <section id="badge" class="component-section">
+      <h2>Badge</h2>
+      <div class="component-example">
+        <span class="badge">New</span>
+        <span class="badge badge-secondary">Sale</span>
+      </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <section id="progress" class="component-section">
+      <h2>Progress Bar</h2>
+      <div class="component-example">
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alert -->
+    <section id="alert" class="component-section">
+      <h2>Alert</h2>
+      <div class="component-example">
+        <div class="alert alert-success">Success! Your operation was successful.</div>
+        <div class="alert alert-danger">Error! Something went wrong.</div>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <section id="pagination" class="component-section">
+      <h2>Pagination</h2>
+      <div class="component-example">
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <section id="tabs" class="component-section">
+      <h2>Tabs</h2>
+      <div class="component-example">
+        <ul class="tabs">
+          <li class="tab active" data-target="#tab1">Tab 1</li>
+          <li class="tab" data-target="#tab2">Tab 2</li>
+          <li class="tab" data-target="#tab3">Tab 3</li>
+        </ul>
+        <div id="tab1" class="tab-content active">Content for Tab 1</div>
+        <div id="tab2" class="tab-content">Content for Tab 2</div>
+        <div id="tab3" class="tab-content">Content for Tab 3</div>
+      </div>
+    </section>
+
   </main>
 
   <script>
@@ -159,6 +229,20 @@
         modal.style.display = "none";
       }
     }
+
+    // Tabs functionality
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        tab.classList.add('active');
+        document.querySelector(tab.dataset.target).classList.add('active');
+      });
+    });
   </script>
 
 </body>
