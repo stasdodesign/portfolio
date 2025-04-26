@@ -72,6 +72,24 @@
         </div>
       </div>
     </section>
+	
+	<section class="accordion-section">
+  <button class="accordion">Заголовок 1</button>
+  <div class="panel">
+    <p>Контент для первого блока.</p>
+  </div>
+
+  <button class="accordion">Заголовок 2</button>
+  <div class="panel">
+    <p>Контент для второго блока.</p>
+  </div>
+
+  <button class="accordion">Заголовок 3</button>
+  <div class="panel">
+    <p>Контент для третьего блока.</p>
+  </div>
+</section>
+
 
     <!-- Alert -->
     <section id="alert" class="component-section">
@@ -81,6 +99,21 @@
         <div class="alert alert-danger">Error! Something went wrong.</div>
       </div>
     </section>
+	
+	<section class="alerts">
+  <div class="alert success">
+    Это успешное уведомление!
+  </div>
+  
+  <div class="alert error">
+    Это сообщение об ошибке.
+  </div>
+  
+  <div class="alert info">
+    Это информационное сообщение.
+  </div>
+</section>
+
 
     <!-- Badge -->
     <section id="badge" class="component-section">
@@ -115,6 +148,23 @@
         </div>
       </div>
     </section>
+	<section class="cards">
+  <div class="card">
+    <h3 class="card-title">Заголовок карточки</h3>
+    <p class="card-text">Краткое описание содержимого карточки.</p>
+  </div>
+  
+  <div class="card">
+    <h3 class="card-title">Ещё одна карточка</h3>
+    <p class="card-text">Описание другой карточки для примера.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">Третья карточка</h3>
+    <p class="card-text">Текст внутри третьей карточки для демонстрации.</p>
+  </div>
+</section>
+
 
     <!-- Collapse -->
     <section id="collapse" class="component-section">
@@ -167,6 +217,18 @@
         </div>
       </div>
     </section>
+	
+	<section class="modal-section">
+  <button id="openModal" class="open-modal-btn">Открыть окно</button>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Это модальное окно!</p>
+    </div>
+  </div>
+</section>
+
 
     <!-- Pagination -->
     <section id="pagination" class="component-section">
@@ -230,6 +292,408 @@
         </label>
       </div>
     </section>
+	
+	<section class="switch-section">
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+</section>
+
+
+    <!-- Tabs -->
+    <section id="tabs" class="component-section">
+      <h2>Tabs</h2>
+      <div class="component-example">
+        <ul class="tabs">
+          <li class="tab active" data-target="#tab1">Tab 1</li>
+          <li class="tab" data-target="#tab2">Tab 2</li>
+          <li class="tab" data-target="#tab3">Tab 3</li>
+        </ul>
+        <div id="tab1" class="tab-content active">Content for Tab 1</div>
+        <div id="tab2" class="tab-content">Content for Tab 2</div>
+        <div id="tab3" class="tab-content">Content for Tab 3</div>
+      </div>
+    </section>
+	
+	<section class="tabs-section">
+  <div class="tabs">
+    <button class="tab-link active" data-tab="tab1">Таб 1</button>
+    <button class="tab-link" data-tab="tab2">Таб 2</button>
+    <button class="tab-link" data-tab="tab3">Таб 3</button>
+  </div>
+
+  <div class="tab-content" id="tab1" style="display: block;">
+    <p>Контент первой вкладки.</p>
+  </div>
+  <div class="tab-content" id="tab2">
+    <p>Контент второй вкладки.</p>
+  </div>
+  <div class="tab-content" id="tab3">
+    <p>Контент третьей вкладки.</p>
+  </div>
+</section>
+
+
+    <!-- Textarea -->
+    <section id="textarea" class="component-section">
+      <h2>Textarea</h2>
+      <div class="component-example">
+        <textarea class="textarea-primary" rows="4" placeholder="Enter multiline text..."></textarea>
+      </div>
+    </section>
+
+    <!-- Tooltip -->
+    <section id="tooltip" class="component-section">
+      <h2>Tooltip</h2>
+      <div class="component-example">
+        <button class="btn-primary" title="This is a tooltip">Hover me for Tooltip</button>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section id="typography" class="component-section">
+      <h2>Typography</h2>
+      <div class="component-example">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <p>This is a paragraph of text.</p>
+        <small>This is a small text.</small>
+        <strong>This is bold text.</strong>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Modal functionality
+    const openModalBtn = document.getElementById("openModalBtn");
+    const modal = document.getElementById("modalWindow");
+    const closeModal = document.querySelector(".close");
+
+    openModalBtn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    closeModal.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Collapse functionality
+    const collapseBtn = document.getElementById("collapseBtn");
+    const collapseContent = document.getElementById("collapseContent");
+
+    collapseBtn.onclick = function() {
+      collapseContent.style.display = collapseContent.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Tabs functionality
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        tab.classList.add('active');
+        document.querySelector(tab.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Themes - UI Components</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Главное меню -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="themes.html" class="nav-link active">Themes</a>
+      <a href="primitives.html" class="nav-link">Primitives</a>
+      <a href="type.html" class="nav-link">Type</a>
+      <a href="colors.html" class="nav-link">Colors</a>
+      <a href="icons.html" class="nav-link">Icons</a>
+    </nav>
+  </header>
+
+  <!-- Второе меню - Якоря -->
+  <aside class="sub-nav">
+    <ul>
+      <li><a href="#accordion">Accordion</a></li>
+      <li><a href="#alert">Alert</a></li>
+      <li><a href="#badge">Badge</a></li>
+      <li><a href="#button">Button</a></li>
+      <li><a href="#card">Card</a></li>
+      <li><a href="#collapse">Collapse</a></li>
+      <li><a href="#dropdown">Dropdown</a></li>
+      <li><a href="#input">Input</a></li>
+      <li><a href="#modal">Modal</a></li>
+      <li><a href="#pagination">Pagination</a></li>
+      <li><a href="#popover">Popover</a></li>
+      <li><a href="#progress">Progress Bar</a></li>
+      <li><a href="#radio">Radio</a></li>
+      <li><a href="#select">Select</a></li>
+      <li><a href="#switch">Switch</a></li>
+      <li><a href="#tabs">Tabs</a></li>
+      <li><a href="#textarea">Textarea</a></li>
+      <li><a href="#tooltip">Tooltip</a></li>
+      <li><a href="#typography">Typography</a></li>
+    </ul>
+  </aside>
+
+  <!-- Компоненты -->
+  <main class="components-list">
+    <!-- Accordion -->
+    <section id="accordion" class="component-section">
+      <h2>Accordion</h2>
+      <div class="component-example">
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button">Section 1</button>
+            <div class="accordion-content">
+              <p>Content for section 1.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">Section 2</button>
+            <div class="accordion-content">
+              <p>Content for section 2.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">Section 3</button>
+            <div class="accordion-content">
+              <p>Content for section 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alert -->
+    <section id="alert" class="component-section">
+      <h2>Alert</h2>
+      <div class="component-example">
+        <div class="alert alert-success">Success! Your operation was successful.</div>
+        <div class="alert alert-danger">Error! Something went wrong.</div>
+      </div>
+    </section>
+	
+	<section class="alerts">
+  <div class="alert success">
+    Это успешное уведомление!
+  </div>
+  
+  <div class="alert error">
+    Это сообщение об ошибке.
+  </div>
+  
+  <div class="alert info">
+    Это информационное сообщение.
+  </div>
+</section>
+
+
+    <!-- Badge -->
+    <section id="badge" class="component-section">
+      <h2>Badge</h2>
+      <div class="component-example">
+        <span class="badge">New</span>
+        <span class="badge badge-secondary">Sale</span>
+      </div>
+    </section>
+
+    <!-- Button -->
+    <section id="button" class="component-section">
+      <h2>Button</h2>
+      <div class="component-example">
+        <button class="btn-primary">Default Button</button>
+        <button class="btn-primary hover">Hover Button</button>
+        <button class="btn-primary" disabled>Disabled Button</button>
+      </div>
+    </section>
+
+    <!-- Card -->
+    <section id="card" class="component-section">
+      <h2>Card</h2>
+      <div class="component-example">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
+          <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">This is some text within a card.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section class="cards">
+  <div class="card">
+    <h3 class="card-title">Заголовок карточки</h3>
+    <p class="card-text">Краткое описание содержимого карточки.</p>
+  </div>
+  
+  <div class="card">
+    <h3 class="card-title">Ещё одна карточка</h3>
+    <p class="card-text">Описание другой карточки для примера.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">Третья карточка</h3>
+    <p class="card-text">Текст внутри третьей карточки для демонстрации.</p>
+  </div>
+</section>
+
+
+    <!-- Collapse -->
+    <section id="collapse" class="component-section">
+      <h2>Collapse</h2>
+      <div class="component-example">
+        <button class="btn-primary" id="collapseBtn">Toggle Collapse</button>
+        <div id="collapseContent" class="collapse-content">
+          <p>This is collapsible content.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dropdown -->
+    <section id="dropdown" class="component-section">
+      <h2>Dropdown</h2>
+      <div class="component-example">
+        <select class="select-primary">
+          <option selected>Select an option</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+
+        <select class="select-primary" disabled>
+          <option>Disabled select</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Input -->
+    <section id="input" class="component-section">
+      <h2>Input</h2>
+      <div class="component-example">
+        <input type="text" class="input-primary" placeholder="Enter text...">
+        <input type="text" class="input-primary focus" placeholder="Focused input">
+        <input type="text" class="input-primary" placeholder="Disabled input" disabled>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section id="modal" class="component-section">
+      <h2>Modal</h2>
+      <div class="component-example">
+        <button class="btn-primary" id="openModalBtn">Open Modal</button>
+        <div id="modalWindow" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Modal Title</h3>
+            <p>Here is some content inside the modal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<section class="modal-section">
+  <button id="openModal" class="open-modal-btn">Открыть окно</button>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Это модальное окно!</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Pagination -->
+    <section id="pagination" class="component-section">
+      <h2>Pagination</h2>
+      <div class="component-example">
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Popover -->
+    <section id="popover" class="component-section">
+      <h2>Popover</h2>
+      <div class="component-example">
+        <button class="btn-primary" title="This is a popover">Hover me for Popover</button>
+      </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <section id="progress" class="component-section">
+      <h2>Progress Bar</h2>
+      <div class="component-example">
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radio -->
+    <section id="radio" class="component-section">
+      <h2>Radio</h2>
+      <div class="component-example">
+        <label><input type="radio" name="option" checked> Option 1</label>
+        <label><input type="radio" name="option"> Option 2</label>
+      </div>
+    </section>
+
+    <!-- Select -->
+    <section id="select" class="component-section">
+      <h2>Select</h2>
+      <div class="component-example">
+        <select class="select-primary">
+          <option selected>Select an option</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Switch -->
+    <section id="switch" class="component-section">
+      <h2>Switch</h2>
+      <div class="component-example">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+	
+	<section class="switch-section">
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+</section>
+
 
     <!-- Tabs -->
     <section id="tabs" class="component-section">
@@ -318,6 +782,58 @@
       });
     });
   </script>
+  
+  <script>
+  const modal = document.getElementById("myModal");
+  const btn = document.getElementById("openModal");
+  const span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  const tabLinks = document.querySelectorAll(".tab-link");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      tabLinks.forEach(item => item.classList.remove("active"));
+      tabContents.forEach(content => content.style.display = "none");
+
+      link.classList.add("active");
+      document.getElementById(link.dataset.tab).style.display = "block";
+    });
+  });
+</script>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach(acc => {
+    acc.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
 
 </body>
 </html>
