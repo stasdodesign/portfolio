@@ -1,161 +1,139 @@
-
-/* Базовые стили */
-
-/* Общие стили для body, шрифты, структура */
+/* Основные стили для компонентов */
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
+  line-height: 1.6;
   background-color: #f9fafb;
   color: #111827;
+  margin: 0;
+  padding: 0;
 }
 
-.main-header {
-  background: #ffffff;
-  padding: 20px;
-  border-bottom: 1px solid #e5e7eb;
+header, nav {
+  background-color: #333;
+  padding: 10px;
 }
 
-.main-nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-link {
+.main-nav a {
+  color: white;
+  padding: 10px;
   text-decoration: none;
-  color: #6b7280;
-  font-weight: 500;
 }
 
-.nav-link.active {
-  color: #3b82f6;
+.main-nav .active {
+  font-weight: bold;
 }
 
 .sub-nav {
-  position: fixed;
-  left: 0;
-  top: 80px;
+  background-color: #fff;
+  padding: 10px;
   width: 200px;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.components-list {
-  margin-left: 220px;
-  padding: 40px;
+.sub-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-nav li {
+  margin-bottom: 10px;
+}
+
+.sub-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-nav a:hover {
+  color: #007bff;
 }
 
 .component-section {
-  margin-bottom: 80px;
+  margin-left: 220px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 .component-example {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
+  margin-top: 10px;
 }
-
-/* Компоненты */
 
 /* Button */
 .btn-primary {
-  background-color: #3b82f6;
-  color: #ffffff;
-  padding: 12px 24px;
-  font-size: 16px;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 8px;
+  padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.btn-primary:hover,
-.btn-primary.hover {
-  background-color: #2563eb;
-  transform: scale(1.05);
-}
-
-.btn-primary:active {
-  transform: scale(0.98);
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
 .btn-primary:disabled {
-  background-color: #9ca3af;
+  background-color: #ccc;
   cursor: not-allowed;
 }
 
-/* Input */
-.input-primary {
-  width: 100%;
-  max-width: 300px;
-  padding: 12px 16px;
-  font-size: 16px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.input-primary:focus,
-.input-primary.focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-}
-
-/* Dropdown (Select) */
-.select-primary {
-  width: 100%;
-  max-width: 300px;
-  padding: 12px 16px;
-  font-size: 16px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1.5em;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.select-primary:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-}
-
-/* Modal: плавное появление */
-.modal {
-  display: none;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
+/* Card */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  width: 200px;
 }
 
-.modal.show {
-  display: block;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-/* Для модалки: фоновое затемнение */
-.modal-overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
+.card-img {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-  transition: opacity 0.3s ease;
+  height: auto;
+  border-radius: 5px;
 }
 
-.modal-overlay.show {
-  display: block;
-  opacity: 1;
+.card-body {
+  padding: 10px;
 }
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Tooltip */
+.btn-primary[title] {
+  position: relative;
+}
+
+.btn-primary[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
