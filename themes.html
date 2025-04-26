@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Themes - UI Components</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- Главное меню -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="themes.html" class="nav-link active">Themes</a>
+      <a href="primitives.html" class="nav-link">Primitives</a>
+      <a href="type.html" class="nav-link">Type</a>
+      <a href="colors.html" class="nav-link">Colors</a>
+      <a href="icons.html" class="nav-link">Icons</a>
+    </nav>
+  </header>
+
+  <!-- Второе меню - Якоря -->
+  <aside class="sub-nav">
+    <ul>
+      <li><a href="#button">Button</a></li>
+      <li><a href="#input">Input</a></li>
+      <li><a href="#dropdown">Dropdown</a></li>
+      <!-- добавим все остальные компоненты потом -->
+    </ul>
+  </aside>
+
+  <!-- Компоненты -->
+  <main class="components-list">
+
+    <!-- Button -->
+    <section id="button" class="component-section">
+      <h2>Button</h2>
+      <div class="component-example">
+        <button class="btn-primary">Default Button</button>
+        <button class="btn-primary hover">Hover Button</button>
+        <button class="btn-primary" disabled>Disabled Button</button>
+      </div>
+    </section>
+
+    <!-- Input -->
+    <section id="input" class="component-section">
+      <h2>Input</h2>
+      <div class="component-example">
+        <input type="text" class="input-primary" placeholder="Enter text...">
+        <input type="text" class="input-primary focus" placeholder="Focused input">
+        <input type="text" class="input-primary" placeholder="Disabled input" disabled>
+      </div>
+    </section>
+
+    <!-- Dropdown -->
+    <section id="dropdown" class="component-section">
+      <h2>Dropdown</h2>
+      <div class="component-example">
+        <select class="select-primary">
+          <option selected>Select an option</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+
+        <select class="select-primary" disabled>
+          <option>Disabled select</option>
+        </select>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
