@@ -58,7 +58,7 @@ header, nav {
   padding: 10px;
   width: 200px;
   position: fixed;
-  top: 50px; /* под фиксированным header */
+  top: 60px; /* под фиксированным header */
   bottom: 0;
   left: -220px; /* прячем за левым краем */
   transition: left 0.3s ease; /* добавляем анимацию */
