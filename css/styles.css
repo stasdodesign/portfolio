@@ -58,16 +58,23 @@ header, nav {
   padding: 10px;
   width: 200px;
   position: fixed;
-  top: 60px; /* под фиксированным header */
+  top: 50px; /* под фиксированным header */
   bottom: 0;
   left: -220px; /* прячем за левым краем */
   transition: left 0.3s ease; /* добавляем анимацию */
   z-index: 999; /* поверх overlay */
-  overflow-y: auto;
+  overflow-y: hidden; /* по умолчанию скрываем скролл */
 }
 
+/* Активное состояние sub-nav */
 .sub-nav.active {
   left: 0; /* выехать на экран */
+  overflow-y: auto; /* показываем скролл при наведении */
+}
+
+/* При наведении на sub-nav появляется прокрутка */
+.sub-nav:hover {
+  overflow-y: auto; /* показываем скролл при наведении */
 }
 
 .sub-nav ul {
@@ -159,12 +166,18 @@ h2 {
     padding: 10px;
     transition: left 0.3s ease;
     z-index: 999;
+	overflow-y: hidden; /* по умолчанию скрываем скролл */
   }
-
+  
   .sub-nav.active {
     left: 0; /* показать панель */
+    overflow-y: auto; /* показываем скролл при наведении */
   }
-
+  
+  .sub-nav:hover {
+    overflow-y: auto; /* показываем скролл при наведении */
+  }
+  
   .components-list {
     margin-left: 0;
     padding: 40px 20px 20px;
@@ -464,7 +477,7 @@ h2 {
   
   .sub-nav {
     position: fixed;
-    top: 60px;
+    top: 10px;
     left: -220px; /* скрыто слева */
     height: calc(100% - 60px);
     background-color: #fff;
