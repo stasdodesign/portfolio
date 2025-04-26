@@ -9,18 +9,48 @@ body {
 }
 
 header, nav {
-  background-color: #333;
+  background-color: #fff;
   padding: 10px;
 }
 
-.main-nav a {
-  color: white;
-  padding: 10px;
+/* Фиксированная шапка (main-header) */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Навигация в шапке */
+  .main-nav {
+    display: none; /* по умолчанию скрыта на мобильных */
+    /*position: absolute;*/
+    background-color: #fff;
+    /*flex-direction: column;*/
+    padding: 10px 0;
+    z-index: 1000;
+	color: white;
+  }
+
+  .main-nav.active {
+    display: flex; /* появляется при активации */
+  }
+
+.main-nav .nav-link {
+  color: #333;  /* Темно-серый текст */
   text-decoration: none;
+  padding: 5px 10px;
 }
 
-.main-nav .active {
-  font-weight: bold;
+.main-nav .nav-link:hover {
+  text-decoration: underline;  /* Подчеркивание при наведении */
 }
 
 .sub-nav {
@@ -28,9 +58,16 @@ header, nav {
   padding: 10px;
   width: 200px;
   position: fixed;
-  top: 0;
+  top: 60px; /* под фиксированным header */
   bottom: 0;
-  left: 0;
+  left: -220px; /* прячем за левым краем */
+  transition: left 0.3s ease; /* добавляем анимацию */
+  z-index: 999; /* поверх overlay */
+  overflow-y: auto;
+}
+
+.sub-nav.active {
+  left: 0; /* выехать на экран */
 }
 
 .sub-nav ul {
@@ -40,6 +77,7 @@ header, nav {
 
 .sub-nav li {
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .sub-nav a {
@@ -52,9 +90,9 @@ header, nav {
 }
 
 .component-section {
-  margin-left: 220px;
+  /*margin-left: 220px;*/
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 h2 {
@@ -64,6 +102,75 @@ h2 {
 .component-example {
   margin-top: 10px;
 }
+
+/* Основной стиль для списка компонентов */
+.components-list {
+  padding: 0px 20px 20px;
+  margin-top: 60px; /* Отступ от хедера */
+}
+
+/* Для десктопной версии: сдвигаем components-list вправо */
+@media (min-width: 769px) {
+  .components-list {
+    margin-left: 220px; /* Сдвигаем вправо, чтобы не было наложения с меню */
+  }
+}
+
+/* Для мобильной версии сохраняем текущие стили */
+@media (max-width: 768px) {
+  .components-list {
+    margin-left: 0; /* Нет отступа слева для мобильной версии */
+    padding: 40px 20px 20px; /* Добавим отступы как в текущей версии */
+  }
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+  .main-nav {
+    display: flex; /* Меню всегда открыто на больших экранах */
+	margin-left: 10px;
+  }
+
+  .sub-nav {
+    left: 0; /* Подменю всегда открыто на больших экранах */
+  }
+
+  .burger {
+    display: none; /* Скрываем бургер на больших экранах */
+  }
+
+  .overlay {
+    display: none; /* Скрываем overlay на больших экранах */
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block; /* Показываем бургер только на маленьких экранах */
+  }
+
+  .sub-nav {
+    position: fixed;
+    top: 60px;
+    left: -220px; /* скрыто слева */
+    height: calc(100% - 60px);
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .sub-nav.active {
+    left: 0; /* показать панель */
+  }
+
+  .components-list {
+    margin-left: 0;
+    padding: 40px 20px 20px;
+  }
+}
+
 
 /* Button */
 .btn-primary {
@@ -177,7 +284,6 @@ h2 {
   background-color: #2196f3;
 }
 
-
 .switch-section {
   margin-top: 40px;
 }
@@ -240,10 +346,11 @@ h2 {
 }
 
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1000;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -335,4 +442,63 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 0 0 6px 6px;
   margin-bottom: 10px;
+}
+
+/* Кнопка бургер */
+.burger {
+  display: none; /* по умолчанию скрыта */
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #333;
+ 
+  cursor: pointer;
+  z-index: 1001; /* поверх хедера */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  
+  .sub-nav {
+    position: fixed;
+    top: 60px;
+    left: -220px; /* скрыто слева */
+    height: calc(100% - 60px);
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  .sub-nav.active {
+    left: 0; /* показать панель */
+  }
+  
+  .components-list {
+    margin-left: 0;
+    padding: 0px 20px 20px;
+  }
+}
+
+/* Оверлей */
+.overlay {
+  position: fixed;
+  top: 60px; /* ниже фиксированного header */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 998;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
