@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Icons - UI Components</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+  <!-- Главное меню -->
+  <header class="main-header">
+    <div class="logo">
+      <svg class="logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
+        <circle cx="50" cy="50" r="40" />
+        <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="50" dy=".25em">S</text>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">STAS</span>
+        <span class="logo-subtitle">Product Design System</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="themes.html" class="nav-link">Themes</a>
+      <a href="primitives.html" class="nav-link">Primitives</a>
+      <a href="type.html" class="nav-link">Type</a>
+      <a href="colors.html" class="nav-link">Colors</a>
+      <a href="icons.html" class="nav-link active">Icons</a>
+    </nav>
+    <button class="burger" id="burger-btn">☰</button>
+    <div class="extra-menu">
+      <a href="https://github.com/stasdodesign/portfolio" class="menu-link">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Компоненты -->
+  <main class="components-list">
+
+    <!-- Icons -->
+    <section id="icons" class="component-section">
+      <h2>Icons</h2>
+      <h3>Basic Icons</h3>
+      <div class="component-example">
+        <div class="icon-set">
+          <div class="icon-item">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 7h2v6h-2V7zm0 8h2v2h-2v-2z"/>
+            </svg>
+            <span>Info</span>
+          </div>
+          <div class="icon-item">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 7h2v6h-2V7zm0 8h2v2h-2v-2z"/>
+            </svg>
+            <span>Warning</span>
+          </div>
+          <div class="icon-item">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 7h2v6h-2V7zm0 8h2v2h-2v-2z"/>
+            </svg>
+            <span>Error</span>
+          </div>
+        </div>
+      </div>
+
+      <h3>Social Icons</h3>
+      <div class="component-example">
+        <div class="icon-set">
+          <div class="icon-item">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9 12.14 12.14 0 01-8.8-4.46 4.28 4.28 0 001.32 5.72 4.24 4.24 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97 8.6 8.6 0 01-5.32 1.84A8.63 8.63 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0024 4.56a8.59 8.59 0 01-2.54.7z"/>
+            </svg>
+            <span>Twitter</span>
+          </div>
+          <div class="icon-item">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9 12.14 12.14 0 01-8.8-4.46 4.28 4.28 0 001.32 5.72 4.24 4.24 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97 8.6 8.6 0 01-5.32 1.84A8.63 8.63 0 012 19.54a12.14 12.14 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0024 4.56a8.59 8.59 0 01-2.54.7z"/>
+            </svg>
+            <span>Facebook</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/modal.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/burger.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colors - UI Components</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+  <!-- Главное меню -->
+  <header class="main-header">
+    <div class="logo">
+      <svg class="logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
+        <circle cx="50" cy="50" r="40" />
+        <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="50" dy=".25em">S</text>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">STAS</span>
+        <span class="logo-subtitle">Product Design System</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="themes.html" class="nav-link">Themes</a>
+      <a href="primitives.html" class="nav-link">Primitives</a>
+      <a href="type.html" class="nav-link">Type</a>
+      <a href="colors.html" class="nav-link active">Colors</a>
+      <a href="icons.html" class="nav-link">Icons</a>
+    </nav>
+    <button class="burger" id="burger-btn">☰</button>
+    <div class="extra-menu">
+      <a href="https://github.com/stasdodesign/portfolio" class="menu-link">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Компоненты -->
+  <main class="components-list">
+
+    <!-- Colors -->
+    <section id="colors" class="component-section">
+      <h2>Colors</h2>
+
+      <!-- Основные цвета -->
+      <h3>Primary Colors</h3>
+      <div class="component-example color-palette">
+        <div class="color-swatch" style="background-color: #007bff;">Primary</div>
+        <div class="color-swatch" style="background-color: #28a745;">Success</div>
+        <div class="color-swatch" style="background-color: #ffc107;  color: #333;">Warning</div>
+        <div class="color-swatch" style="background-color: #dc3545;">Error</div>
+        <div class="color-swatch" style="background-color: #17a2b8;">Info</div>
+      </div>
+
+      <!-- Оттенки серого -->
+      <h3>Grayscale</h3>
+      <div class="component-example color-palette">
+        <div class="color-swatch" style="background-color: #f8f9fa; color: #333;">Light</div>
+        <div class="color-swatch" style="background-color: #e9ecef; color: #333;">Gray 100</div>
+        <div class="color-swatch" style="background-color: #dee2e6; color: #333;">Gray 200</div>
+        <div class="color-swatch" style="background-color: #ced4da; color: #333;">Gray 300</div>
+        <div class="color-swatch" style="background-color: #6c757d; color: #fff;">Dark</div>
+      </div>
+
+      <!-- Примеры использования -->
+      <h3>Usage Examples</h3>
+      <div class="component-example">
+        <button class="btn-primary" style="background-color: #007bff; color: #fff;">Primary Button</button>
+        <button class="btn-success" style="background-color: #28a745; color: #fff;">Success Button</button>
+        <button class="btn-warning" style="background-color: #ffc107; color: #333;">Warning Button</button>
+        <button class="btn-error" style="background-color: #dc3545; color: #fff;">Error Button</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/modal.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/burger.js"></script>
+
+</body>
+</html>

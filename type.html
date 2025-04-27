@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Type - UI Components</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+  <!-- Главное меню -->
+  <header class="main-header">
+    <div class="logo">
+      <svg class="logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
+        <circle cx="50" cy="50" r="40" />
+        <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="50" dy=".25em">S</text>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-title">STAS</span>
+        <span class="logo-subtitle">Product Design System</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="themes.html" class="nav-link">Themes</a>
+      <a href="primitives.html" class="nav-link">Primitives</a>
+      <a href="type.html" class="nav-link active">Type</a>
+      <a href="colors.html" class="nav-link">Colors</a>
+      <a href="icons.html" class="nav-link">Icons</a>
+    </nav>
+    <button class="burger" id="burger-btn">☰</button>
+    <div class="extra-menu">
+      <a href="https://github.com/stasdodesign/portfolio" class="menu-link">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Компоненты -->
+  <main class="components-list">
+
+    <!-- Typography -->
+    <section id="typography" class="component-section">
+      <h2>Typography</h2>
+
+      <!-- Заголовки -->
+      <h3>Headings</h3>
+      <div class="component-example">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+
+      <!-- Параграфы -->
+      <h3>Paragraphs</h3>
+      <div class="component-example">
+        <p>This is a standard paragraph. It contains some text to demonstrate the default styling of paragraphs in this design system.</p>
+        <p><strong>Bold text</strong> and <em>italic text</em> can be used to emphasize certain parts of the content.</p>
+      </div>
+
+      <!-- Цитаты -->
+      <h3>Blockquotes</h3>
+      <div class="component-example">
+        <blockquote>
+          "This is a blockquote. It is used to highlight a quote or a piece of text that requires special attention."
+        </blockquote>
+      </div>
+
+      <!-- Списки -->
+      <h3>Lists</h3>
+      <div class="component-example">
+        <h4>Unordered List</h4>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+        <h4>Ordered List</h4>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ol>
+      </div>
+
+      <!-- Код -->
+      <h3>Code</h3>
+      <div class="component-example">
+        <p>Inline code: <code>const x = 10;</code></p>
+        <pre><code>
+// Block of code
+function greet() {
+  console.log("Hello, world!");
+}
+        </code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/modal.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/burger.js"></script>
+
+</body>
+</html>

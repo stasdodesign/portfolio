@@ -265,13 +265,16 @@ h2 {
 }
 
 
-/* Button */
+/* Стили для кнопок */
 .btn-primary {
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
   padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -281,6 +284,55 @@ h2 {
 .btn-primary:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+
+/* Success Button */
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Warning Button */
+.btn-warning {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Error Button */
+.btn-error {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-error:hover {
+  background-color: #c82333;
 }
 
 /* Card */
@@ -793,4 +845,105 @@ h2 {
   border-color: #007bff;
   outline: none;
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.icon-set {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  fill: currentColor;
+}
+
+/* Стили для h4 */
+h4 {
+  font-size: 1.125rem; /* Размер шрифта */
+  font-weight: 600; /* Полужирный текст */
+  margin-bottom: 8px; /* Отступ снизу */
+  color: #555; /* Цвет текста */
+}
+
+/* Стили для h5 */
+h5 {
+  font-size: 1rem; /* Размер шрифта */
+  font-weight: 500; /* Средний вес текста */
+  margin-bottom: 6px; /* Отступ снизу */
+  color: #666; /* Цвет текста */
+}
+
+/* Стили для h6 */
+h6 {
+  font-size: 0.875rem; /* Размер шрифта */
+  font-weight: 500; /* Средний вес текста */
+  margin-bottom: 4px; /* Отступ снизу */
+  color: #777; /* Цвет текста */
+}
+/* Стили для типографики */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #ccc;
+  font-style: italic;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+/* Стили для цветовой палитры */
+.color-palette {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
