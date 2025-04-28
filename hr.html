@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Primitives - UI Components</title>
+    <title>HR - UI Components</title>
     <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/hr.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -24,9 +24,9 @@
     </div>
     <nav class="main-nav">
       <a href="themes.html" class="nav-link">Themes</a>
-      <a href="primitives.html" class="nav-link active">Primitives</a>
+      <a href="primitives.html" class="nav-link">Primitives</a>
       <a href="type.html" class="nav-link">Type</a>
-      <a href="colors.html" class="nav-link">Colors</a>
+      <a href="colors.html" class="nav-link active">Colors</a>
       <a href="icons.html" class="nav-link">Icons</a>
     </nav>
     <button class="burger" id="burger-btn">☰</button>
@@ -40,29 +40,16 @@
   <!-- Второе меню - Якоря -->
   <aside class="sub-nav">
     <ul>
-	  <li><a href="#Trigger">Trigger</a></li>
-      <li><a href="#form">Form</a></li>
+      <li><a href="#Trigger">Trigger</a></li>
     </ul>
   </aside>
 
   <!-- Компоненты -->
   <main class="components-list">
 
-    <!-- C -->
-    <section  class="component-section">
-      <h1>Core building blocks for design system</h1>
-      <p>These are the basic building blocks of design system. They can be used to create more complex components.</p>
-      <br>
-      <a href="themes.html" class="btn-primary">
-        Components
-        <svg class="icon small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-          <path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </section>
-	    <!-- Trigger -->
+    <!-- Trigger -->
     <section id="Trigger" class="component-section">
-      <h2>HR</h2>
+      <h1>HR</h1>
       
 <div class="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-lg space-y-6">
   <h2 class="text-2xl font-bold">Создание триггера события</h2>
@@ -135,27 +122,7 @@
 </div>
 
 </section>
-    <section id="form" class="component-section">
-      <h2>Form</h2>
 
-    <div class="component-example">
-        <form>
-          <div class="form-group">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" id="password" class="form-control" placeholder="Enter your password">
-          </div>
-          <button type="submit" class="btn-primary">Submit</button>
-        </form>
-      </div>
-    </section>
 
   </main>
 

@@ -51,6 +51,9 @@ header, nav {
   padding: 10px;
 }
 
+input, textarea {
+  box-sizing: border-box; /* Учитывать границы и отступы в ширине */
+}
 /* Фиксированная шапка (main-header) */
 .main-header {
   position: fixed;
@@ -964,4 +967,13 @@ pre {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Градиентная подложка для секций */
+#Trigger, #form {
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff); /* Мягкий градиент */
+  padding: 2rem; /* Внутренние отступы */
+  border-radius: 12px; /* Скруглённые углы */
+  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  margin-bottom: 2rem; /* Отступ снизу */
 }
