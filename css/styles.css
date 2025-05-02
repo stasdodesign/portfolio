@@ -976,4 +976,5 @@ pre {
   border-radius: 12px; /* Скруглённые углы */
   /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
   margin-bottom: 2rem; /* Отступ снизу */
+  padding-bottom: 8rem;
 }

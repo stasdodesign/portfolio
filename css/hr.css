@@ -1,6 +1,17 @@
+:root {
+  --container-md: 28rem; /* 448px */
+}
+
 /* Основной контейнер */
 .max-w-2xl {
   max-width: 42rem; /* Максимальная ширина 672px */
+}
+
+.w-full {
+  width: 100%;
+}
+.max-w-md {
+  max-width: var(--container-md);
 }
 
 .mx-auto {
@@ -11,6 +22,10 @@
 .p-6 {
   padding: 1.5rem; /* Отступ 24px */
 }
+
+.p-8 {
+  padding:2rem;
+} /* Отступ 32px */
 
 .bg-white {
   background-color: #ffffff;
@@ -61,6 +76,11 @@
   margin-bottom: 0.25rem; /* Отступ снизу 4px */
 }
 
+/* Add bottom margin of 8px */
+.mb-2 {
+  margin-bottom: 0.5rem; /* 8px */
+}
+
 /* Поля ввода */
 .w-full {
   width: 100%;
@@ -81,6 +101,21 @@
 .flex {
   display: flex;
 }
+.h-screen {
+  height:100vh;
+}
+.w-full {
+  width:100%
+}
+.max-w-md {
+  max-width:28rem
+}
+.items-center {
+  align-items:center
+}
+.justify-center {
+  justify-content:center
+}
 
 .space-x-2 > * + * {
   margin-left: 0.5rem; /* Горизонтальное расстояние 8px */
@@ -89,6 +124,7 @@
 .space-x-3 > * + * {
   margin-left: 0.75rem; /* Горизонтальное расстояние 12px */
 }
+
 
 .flex-1 {
   flex: 1; /* Элемент занимает всё доступное пространство */
@@ -157,4 +193,79 @@ textarea {
 
 .hover\:bg-blue-700:hover {
   background-color: #1d4ed8; /* Более тёмный синий фон при наведении */
+}
+
+/* Ensure labels wrap to a new line in mobile view */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+@media (max-width: 375px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 375px) {
+  .flex-nowrap {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 424px) {
+  .mt-mobile {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 424px) {
+  .ml-mobile-0 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .space-x-2 > * + * {
+    margin-left: 0; /* Убираем отступ в мобильной версии */
+    margin-right: 0.5rem; /* Добавляем отступ справа в мобильной версии */
+  }
+}
+@media (max-width: 375px) {
+  .flex-column-mobile {
+    flex-direction: column;
+    gap: 1rem; /* Добавляем отступ между кнопками */
+  }
+}
+@media (max-width: 375px) {
+  .space-x-4 > * + * {
+    margin-left: 0; /* Убираем отступ в мобильной версии */
+  }
+}
+@media (max-width: 375px) {
+  select {
+    max-width: 100%; /* Ограничиваем ширину на мобильных устройствах */
+  }
+}
+select {
+  max-width: 100%; /* Ограничиваем ширину */
+  box-sizing: border-box; /* Учитываем отступы и границы */
+}
+/* Ensure elements do not exceed the full width of their container */
+.max-w-full {
+  max-width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's width */
+}
+@media (max-width: 640px) {
+  select {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+select {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box; /* Учитываем отступы и границы */
+  overflow: hidden; /* Скрываем выходящий контент */
 }
