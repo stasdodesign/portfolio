@@ -7,7 +7,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
+footer {
+  text-align: left;
+  padding: 20px;
+  background-color: ;
+  color: white;
+  position: relative;
+  margin-left: 220px;
+}
 /* Стили для заголовков */
 h1 {
   font-size: 2.5rem; /* Размер шрифта */
