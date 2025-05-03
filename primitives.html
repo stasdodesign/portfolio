@@ -102,71 +102,71 @@
       <h2>HR</h2>
       
 <div class="max-w-2xl mx-auto p-8 bg-white rounded-2xl shadow-lg space-y-6">
-  <h3>Создание триггера события</h3>
+  <h3>Creating a trigger event</h3>
 
   <div class="space-y-4">
     <!-- Тип события -->
     <div class="max-w-full">
-      <label class="block text-sm font-medium mb-1">Тип события</label>
+      <label class="block text-sm font-medium mb-1">Type of event</label>
       <select class="w-full border rounded-lg p-2 max-w-full">
-        <option>Выберите событие</option>
-        <option>Окончание испытательного срока</option>
-        <option>Постановка годовых целей</option>
-        <option>Согласование отпуска</option>
+        <option>Select an event</option>
+        <option>End of probationary period</option>
+        <option>Setting annual goals</option>
+        <option>Vacation approvment</option>
       </select>
 
     </div>
 
     <!-- Условие срабатывания -->
     <div>
-      <label class="block text-sm font-medium mb-1">Условие срабатывания</label>
+      <label class="block text-sm font-medium mb-1">Trigger condition</label>
       <div class="flex space-x-2 flex-wrap sm:flex-nowrap">
-        <input type="date" class="flex-1 border rounded-lg p-2" placeholder="Дата">
-        <input type="number" class="w-28 border rounded-lg p-2 mt-mobile ml-mobile-0" placeholder="+30 дней">
+        <input type="date" class="flex-1 border rounded-lg p-2" placeholder="Data">
+        <input type="number" class="w-28 border rounded-lg p-2 mt-mobile ml-mobile-0" placeholder="+30 days">
       </div>
     </div>
 
     <!-- Ответственные -->
     <div>
-      <label class="block text-sm font-medium mb-1">Кому отправить уведомление</label>
-      <input type="text" class="w-full border rounded-lg p-2" placeholder="Выберите сотрудников или роли">
+      <label class="block text-sm font-medium mb-1">Who to send the notification to</label>
+      <input type="text" class="w-full border rounded-lg p-2" placeholder="Select employees or roles">
     </div>
 
     <!-- Способ уведомления -->
     <div>
-      <label class="block text-sm font-medium mb-1">Способ уведомления</label>
+      <label class="block text-sm font-medium mb-1">Notification method</label>
       <div class="flex space-x-2 flex-wrap sm:flex-nowrap">
         <label class="flex items-center space-x-2">
           <input type="checkbox" class="rounded border-gray-300">
-          <span>В системе</span>
+          <span>In the system</span>
         </label>
         <label class="flex items-center space-x-2">
           <input type="checkbox" class="rounded border-gray-300">
-          <span>По почте</span>
+          <span>By Email</span>
         </label>
         <label class="flex items-center space-x-2">
           <input type="checkbox" class="rounded border-gray-300">
-          <span>В мессенджере</span>
+          <span>In messenger</span>
         </label>
       </div>
     </div>
 
     <!-- Текст уведомления -->
     <div>
-      <label class="block text-sm font-medium mb-1">Текст уведомления</label>
-      <textarea class="w-full border rounded-lg p-2" rows="4" placeholder="Введите текст уведомления с переменными..."></textarea>
+      <label class="block text-sm font-medium mb-1">Notification text</label>
+      <textarea class="w-full border rounded-lg p-2" rows="4" placeholder="Enter notification text with variables..."></textarea>
     </div>
 
     <!-- Статус -->
     <div class="flex items-center space-x-2">
       <input type="checkbox" class="rounded border-gray-300" checked>
-      <span>Активный триггер</span>
+      <span>Active trigger</span>
     </div>
 
     <!-- Кнопки -->
     <div class="flex justify-end space-x-4 flex-column-mobile">
-      <button class="btn-primary px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">Отмена</button>
-      <button class="btn-primary px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">Сохранить триггер</button>
+      <button class="btn-primary px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">Cancel</button>
+      <button class="btn-primary px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">Save trigger</button>
     </div>
 
   </div>

@@ -36,7 +36,8 @@
 }
 
 .shadow-lg {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px rgba(222, 101, 101, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow:-15px 0 30px -10px var(#f5ae73),0 0 30px -10px var(#b6006f53),15px 0 30px -10px var(#2d01dd4a),0 0 0 1px var(#e2008b23);
 }
 
 .space-y-6 > * + * {
