@@ -10,7 +10,7 @@ body {
 footer {
   text-align: left;
   padding: 20px;
-  background-color: ;
+  background-color: none;
   color: white;
   position: relative;
   margin-left: 220px;
@@ -977,7 +977,7 @@ pre {
 }
 
 /* Градиентная подложка для секций */
-#Trigger, #form {
+#Trigger, #form, #HR {
   background: linear-gradient(135deg, #f3e7e9, #e3eeff); /* Мягкий градиент */
   padding: 2rem; /* Внутренние отступы */
   border-radius: 12px; /* Скруглённые углы */

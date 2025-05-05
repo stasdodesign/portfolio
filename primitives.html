@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Primitives - UI Components</title>
     <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/hr.css">
+    <link rel="stylesheet" href="css/trigger.css">
+    <link rel="stylesheet" href="css/hr.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="jedicss.ico/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="jedicss.ico/favicon.svg" />
@@ -48,13 +49,14 @@
     <ul>
       <li><a href="#form">Form</a></li>
       <li><a href="#Trigger">Trigger</a></li>
+      <li><a href="#HR">HR</a></li>
     </ul>
   </aside>
 
   <!-- Компоненты -->
   <main class="components-list">
 
-    <!-- C -->
+    <!-- Components -->
     <section  class="component-section">
       <h1>Core building blocks for design system</h1>
       <p>These are the basic building blocks of design system. They can be used to create more complex components.</p>
@@ -102,8 +104,8 @@
       </div>
           </section>
       
-	    <!-- Trigger -->
-    <section id="Trigger" class="component-section">
+	    <!-- HR -->
+      <section id="Trigger" class="component-section">
       <h2>HR</h2>
       
 <div class="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-lg space-y-6">
@@ -176,13 +178,51 @@
 
   </div>
 </div>
-
-
-
 </section>
 
-  </main>
+<!-- HR -->
+ 
+<section id="HR" class="component-section">
+  <h2>HR Триггеры</h2>
+  <div class="container">
+    <div class="trigger-list" id="triggerList">
+        <!-- Список триггеров будет отрисован через JavaScript -->
+    </div>
+    <button class="btn" onclick="openModal()">Создать триггер</button>
 
+<!-- Модальное окно -->
+<div id="modalWindow" class="modal">
+<div class="modal-content">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <h3>Новый триггер</h3>
+  <div class="form-group">
+      <label class="form-label">Событие</label>
+      <select id="eventInput" class="form-control">
+          <option>Конец испытательного срока</option>
+          <option>Первый день работы</option>
+          <option>День рождения</option>
+          <option>Годовщина работы</option>
+      </select>
+  </div>
+  <div class="form-group">
+      <label class="form-label">Условие</label>
+      <input type="text" id="conditionInput" class="form-control" placeholder="например, за 3 дня">
+  </div>
+  <div class="form-group">
+      <label class="form-label">Получатель</label>
+      <input type="text" id="recipientInput" class="form-control" placeholder="например, менеджер сотрудника">
+  </div>
+  <div class="form-group">
+      <label class="form-label">Действие</label>
+      <input type="text" id="actionInput" class="form-control" placeholder="например, отправить фидбек-форму">
+  </div>
+  <button class="btn-primary" onclick="saveTrigger()">Сохранить</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+  <script src="js/trigger.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/accordion.js"></script>
