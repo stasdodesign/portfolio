@@ -37,6 +37,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    z-index: 20;
 }
 .form {
     display: none;
@@ -86,11 +87,11 @@
 }
 
 .button-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 16px;
+    margin: 40px 0;
 }
 
 .button-caption {
@@ -98,4 +99,30 @@
     color: #666;
     text-align: center;
     margin-top: 4px;
+}
+
+.caption-with-arrow {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 16px;
+    z-index: 10;
+    margin-right: 50px;
+}
+
+.curved-arrow-left {
+    width: 60px;
+    height: 60px;
+    transform: scale(1) rotate(0deg);
+    fill: #000000;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+
+.button-caption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
 }
