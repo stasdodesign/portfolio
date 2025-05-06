@@ -292,7 +292,8 @@ h2 {
   align-items: center;
   gap: 8px; /* Расстояние между текстом и иконкой */
   justify-content: center; /* Выравнивание по горизонтали */
-  
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .btn-primary .icon {
