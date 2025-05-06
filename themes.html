@@ -11,7 +11,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="jedicss.ico/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="JEDI CSS. Product Design System" />
     <link rel="manifest" href="jedicss.ico/site.webmanifest" />
-    <link rel="stylesheet" href="css/styles.css">   
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/trigger.css">
+    <link rel="stylesheet" href="css/hr.css">   
   </head>
 <body>
 
@@ -132,6 +134,25 @@
         <button class="btn-primary">Default Button</button>
         <button class="btn-primary hover">Hover Button</button>
         <button class="btn-primary" disabled>Disabled Button</button>
+        <div class="tooltip-container">
+          <button class="btn-icon-right btn-primary" onclick="openModal()">
+              Создать триггер
+              <svg class="icon small-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>   
+          </button>
+          <span class="tooltip">Эта кнопка для вызова модального окна</span>
+      </div>
+        <!-- Replace the tooltip-container div with this: -->
+<div class="button-container">
+  <button class="btn-icon-right btn-primary" onclick="openModal()">
+      Создать триггер
+      <svg class="icon small-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+          <path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>   
+  </button>
+  <span class="button-caption">Эта кнопка для вызова модального окна</span>
+</div>
       </div>
     </section>
 
@@ -300,6 +321,7 @@
 
   </main>
 
+  <script src="js/trigger.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/accordion.js"></script>
