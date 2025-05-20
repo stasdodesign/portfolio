@@ -15,6 +15,11 @@ footer {
   position: relative;
   margin-left: 220px;
 }
+@media (max-width: 959px) {
+  footer {
+    margin-left: 0 !important;
+  }
+}
 /* Стили для заголовков */
 h1 {
   font-size: 2.5rem; /* Размер шрифта */
