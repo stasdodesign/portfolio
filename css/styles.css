@@ -63,6 +63,23 @@ header, nav {
   padding: 10px;
 }
 
+.nav-link {
+  color: #666666; /* спокойный тёмно-серый */
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  transition: color 0.3s, background-color 0.3s, border-left-color 0.3s;
+}
+
+.nav-link.active {
+  color: #222; /* спокойный синий */
+  font-weight: 600;
+  border-left: 2px solid #b8b8b8; /* синий акцент слева */
+  background-color: rgba(176, 176, 176, 0.1); /* светлый синий фон */
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 input, textarea {
   box-sizing: border-box; /* Учитывать границы и отступы в ширине */
 }
