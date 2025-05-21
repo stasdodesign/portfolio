@@ -63,7 +63,7 @@ header, nav {
   padding: 10px;
 }
 
-.nav-link {
+.sub-nav .nav-link {
   color: #666666; /* спокойный тёмно-серый */
   text-decoration: none;
   padding: 8px 12px;
@@ -71,7 +71,7 @@ header, nav {
   transition: color 0.3s, background-color 0.3s, border-left-color 0.3s;
 }
 
-.nav-link.active {
+.sub-nav .nav-link.active {
   color: #222; /* спокойный синий */
   font-weight: 600;
   border-left: 2px solid #b8b8b8; /* синий акцент слева */
@@ -133,7 +133,16 @@ input, textarea {
 
 .main-nav .nav-link:hover {
   text-decoration: underline;  /* Подчеркивание при наведении */
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
+.main-nav .nav-link.active {
+  font-weight: 600;
+  /*color: #007bff; /* Синий цвет для активной ссылки */
+  /*bottom: 2px solid #007bff; /* Синяя линия под активной ссылкой */
+  /*background-color: rgba(0, 123, 255, 0.1); /* Светлый синий фон */
+  /*border-radius: 4px; /* Скругленные углы */
+  /*padding: 5px 10px; *//* Отступы вокруг текста */}
 
 /* Дополнительное меню справа */
 .extra-menu {
