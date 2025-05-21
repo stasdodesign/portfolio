@@ -47,6 +47,9 @@
         white-space: normal;
         word-break: break-word;
       }
+      h2.jedi-font-demo-title {
+        color: #555;
+      }
       .jedi-font-demo-title--blend {
         font-size: 15rem;
         margin-bottom: 0.7rem;
@@ -132,9 +135,9 @@
           margin: 1rem 0 1rem 0;
           padding: 12px 4vw 12px 4vw;
         }
-        .jedi-font-demo-title {
+        h1.jedi-font-demo-title {
           font-size: 10rem;
-          padding: 12px 18px;
+          padding: 12px 38px;
           margin-left: -4vw;
           margin-right: -4vw;
         }
@@ -176,12 +179,12 @@
   <!-- Второе меню - Якоря -->
   <aside class="sub-nav">
     <ul>
-      <li><a href="#JediFont">Jedi Font</a></li>
-      <li><a href="#Headings">Headings</a></li>
-      <li><a href="#Paragraphs">Paragraphs</a></li>
-      <li><a href="#Blockquotes">Blockquotes</a></li>
-      <li><a href="#Lists">Lists</a></li>
-      <li><a href="#Code">Code</a></li>
+      <li><a href="#JediFont" class="nav-link">Jedi Font</a></li>
+      <li><a href="#Headings" class="nav-link">Headings</a></li>
+      <li><a href="#Paragraphs" class="nav-link">Paragraphs</a></li>
+      <li><a href="#Blockquotes" class="nav-link">Blockquotes</a></li>
+      <li><a href="#Lists" class="nav-link">Lists</a></li>
+      <li><a href="#Code" class="nav-link">Code</a></li>
     </ul>
   </aside>
   <!-- Компоненты -->
@@ -253,7 +256,7 @@
     <!-- Typography -->
     <section id="Headings" class="component-section">
       <!-- Заголовки -->
-      <h3 class="jedi-font-demo-title">Headings</h3>
+      <h2 class="jedi-font-demo-title">Headings</h2>
       <div class="component-example">
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -265,7 +268,7 @@
 </section>
 <section id="Paragraphs" class="component-section">    
       <!-- Параграфы -->
-      <h3 class="jedi-font-demo-title">Paragraphs</h3>
+      <h2 class="jedi-font-demo-title">Paragraphs</h2>
       <div class="component-example">
         <p>This is a standard paragraph. It contains some text to demonstrate the default styling of paragraphs in this design system.</p>
         <p><strong>Bold text</strong> and <em>italic text</em> can be used to emphasize certain parts of the content.</p>
@@ -274,7 +277,7 @@
 
     <section id="Blockquotes" class="component-section">  
       <!-- Цитаты -->
-      <h3 class="jedi-font-demo-title">Blockquotes</h3>
+      <h2 class="jedi-font-demo-title">Blockquotes</h2>
       <div class="component-example">
         <blockquote>
           "This is a blockquote. It is used to highlight a quote or a piece of text that requires special attention."
@@ -284,7 +287,7 @@
 
     <section id="Lists" class="component-section">  
       <!-- Списки -->
-      <h3 class="jedi-font-demo-title">Lists</h3>
+      <h2 class="jedi-font-demo-title">Lists</h2>
       <div class="component-example">
         <h4>Unordered List</h4>
         <ul>
@@ -303,7 +306,7 @@
 
     <section id="Code" class="component-section">  
       <!-- Код -->
-      <h3 class="jedi-font-demo-title">Code</h3>
+      <h2 class="jedi-font-demo-title">Code</h2>
       <div class="component-example">
         <p>Inline code: <code>const x = 10;</code></p>
         <pre><code>
@@ -321,6 +324,7 @@ function greet() {
   <script src="js/tabs.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/scroll.js"></script>
   <script>
   // filepath: c:\git\type.html
   // Обновление заголовка при вводе
